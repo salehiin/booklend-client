@@ -9,9 +9,10 @@ Currently, two official plugins are available:
 
 # 58.1 - project, tailwind, daisyUI set up
 # 58.2 - footer, header, assets folder maintain, logo, full site width maintain, full site css maintain - main.jsx
-# 58.3 - manage navbar, banner, banner button position, 
-# 58.4 - banner styling, linear gradient, 
-# 58.5 - 
+# 58.3 - manage navbar, banner, banner button position, 12:20
+# 58.4 - banner styling, linear gradient 
+# 58.5 - about section, position
+# 58.6 - services section, 03:30
 
 # Home page - 4 categories - image, name, button, extra 2 sections
 # Navbar - Logo, Home, Add Book, All Books, Borrowed Books, Login
@@ -37,4 +38,26 @@ Currently, two official plugins are available:
 80% opacity: #01161ecc
 90% opacity: #01161ee6
 
-# Home page - Featured Books - categories()
+# Home page | Featured Books - categories(parallex) - Blog | Newsletter - Blog/News&Events/Newsletter/Search
+
+- https://swiperjs.com/demos/410-virtual-slides/core (featured section)
+- https://express-labs.github.io/pure-react-carousel/
+- https://react-responsive-carousel.js.org/storybook/?path=/story/01-basic--base
+- 
+
+
+- https://react-photo-album.com/ (all books)
+
+- https://rsuitejs.com/components/toaster/ (toaster)
+
+- https://mui.com/material-ui/react-card/ (card)
+
+Background: #FAF9F6, Primary: 333333 or 01161e, Secondary: #F2B263 or 52b788
+
+
+
+Comics, Computers & Tech, Arts & Music, Biographies, Health & Fitness, Cooking, Edu & Reference, Entertainment, Kids, Literature & Fiction, Medical, Mysteries, Parenting, Religion, Romance, Sci-Fi & Fantasy, Science & Math, Self-Help, Social Sciences, Sports, Teen, Travel, True Crime, Westerns
+
+Kids, Sports, Computers & Tech, Comics, Biographies, Health & Fitness, Literature & Fiction, Science & Math, Travel
+
+
