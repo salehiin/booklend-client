@@ -5,6 +5,7 @@ import b2 from '../../../assets/b2.jpg'
 import b3 from '../../../assets/b3.jpg'
 import b4 from '../../../assets/b4.jpg'
 import BannerText from './BannerText'
+import SliderBtn from './SliderBtn'
 
 const Banner = () => {
 
@@ -113,10 +114,10 @@ const Banner = () => {
                     <BannerText></BannerText>
                     {/*  */}
                 </div>
-                <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide4" className="btn btn-circle">❮</a>
-                    <a href="#slide2" className="btn btn-circle">❯</a>
-                </div>
+                <SliderBtn
+                    left={"#slide4"}
+                    right={"#slide2"}
+                ></SliderBtn>
             </div>
             {/* 2ND SLIDE */}
             <div id="slide2" className="carousel-item relative w-full">
@@ -128,10 +129,11 @@ const Banner = () => {
                     <BannerText></BannerText>
                     {/*  */}
                 </div>
-                <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide1" className="btn btn-circle">❮</a>
-                    <a href="#slide3" className="btn btn-circle">❯</a>
-                </div>
+                
+                <SliderBtn
+                    left={"#slide1"}
+                    right={"#slide3"}
+                ></SliderBtn>
             </div>
             {/* 3RD SLIDE */}
             <div id="slide3" className="carousel-item relative w-full">
@@ -143,10 +145,10 @@ const Banner = () => {
                     <BannerText></BannerText>
                     {/*  */}
                 </div>
-                <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide2" className="btn btn-circle">❮</a>
-                    <a href="#slide4" className="btn btn-circle">❯</a>
-                </div>
+                <SliderBtn
+                    left={"#slide2"}
+                    right={"#slide4"}
+                ></SliderBtn>
             </div>
             {/* 4TH SLIDE */}
             <div id="slide4" className="carousel-item relative w-full">
@@ -158,10 +160,10 @@ const Banner = () => {
                     <BannerText></BannerText>
                     {/*  */}
                 </div>
-                <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide3" className="btn btn-circle">❮</a>
-                    <a href="#slide1" className="btn btn-circle">❯</a>
-                </div>
+                <SliderBtn
+                    left={"#slide3"}
+                    right={"#slide1"}
+                ></SliderBtn>
             </div>
            
 

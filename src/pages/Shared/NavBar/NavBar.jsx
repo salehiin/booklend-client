@@ -5,10 +5,10 @@ import logo from '../../../assets/blogo.png';
 const NavBar = () => {
 
     const navItems = <>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/">Add Book</Link></li>
-        <li><Link to="/">All Books</Link></li>
-        <li><Link to="/">Borrowed Book</Link></li>
+        <li><Link className="hover:bg-[#F2B263] hover:text-[#333333]" to="/">Home</Link></li>
+        <li><Link className="hover:bg-[#F2B263] hover:text-[#333333]" to="/">Add Book</Link></li>
+        <li><Link className="hover:bg-[#F2B263] hover:text-[#333333]" to="/books">All Books</Link></li>
+        <li><Link className="hover:bg-[#F2B263] hover:text-[#333333]" to="/">Borrowed Book</Link></li>
     </>
 
     return (
@@ -37,18 +37,19 @@ const NavBar = () => {
 
                         </ul>
                     </div>
-                    <Link className="w-8" to="/" clLinkssName="btn btn-ghost text-xl">
-                        <img src={logo} alt="" />
+                    <Link className="w-8 flex gap-1" to="/" clLinkssName="btn btn-ghost text-xl">
+                        <img src={logo} className="" alt="" />
+                        <p className="text-[#F2B263] text-xl font-semibold">Booklend</p>
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 text-[#F2B263]">
                         {navItems}
                         
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <button className="btn btn-outline btn-info">Login</button>
+                    <button className="btn btn-outline text-[#F2B263] hover:bg-[#F2B263]">Login</button>
                 </div>
             </div>
         </div>

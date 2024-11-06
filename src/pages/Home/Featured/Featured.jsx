@@ -1,6 +1,7 @@
-import { Rating } from '@smastrom/react-rating';
+
 import '@smastrom/react-rating/style.css'
 import FeaturedProduct from '../Home/FeaturedProduct/FeaturedProduct';
+
 
 const Featured = () => {
 
@@ -21,6 +22,7 @@ const Featured = () => {
                 </div>
                 <div className="my-16">
                     <div className="flex">
+                        
                         
                         <FeaturedProduct
                             photo={"https://demo.fieldthemes.com/bookshop/demo1/home2/50-large_default/convallis-pharetra.jpg"}

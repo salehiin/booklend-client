@@ -3,6 +3,8 @@ import Main from "../Layout/Main";
 import Home from "../pages/Home/Home/Home";
 import '../../src/App.css'
 import SingleCategoryDisplay from "../pages/singleCategory/singleCategoryDisplay/singleCategoryDisplay";
+import Books from "../pages/Books/Books/Books";
+import Login from "../pages/Login/Login";
 
 
 const router = createBrowserRouter([
@@ -13,6 +15,14 @@ const router = createBrowserRouter([
         {
             path: '/',
             element: <Home></Home>
+        },
+        {
+          path: '/books',
+          element: <Books></Books>
+        },
+        {
+          path: '/login',
+          element: <Login></Login>
         },
         {
             path: '/kids',

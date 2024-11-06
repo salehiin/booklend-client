@@ -12,7 +12,7 @@ Currently, two official plugins are available:
 # 58.3 - manage navbar, banner, banner button position, 12:20
 # 58.4 - banner styling, linear gradient 
 # 58.5 - about section, position
-# 58.6 - services section, 03:30
+# 58.6 - services section, 05:30
 
 # Home page - 4 categories - image, name, button, extra 2 sections
 # Navbar - Logo, Home, Add Book, All Books, Borrowed Books, Login
@@ -52,6 +52,8 @@ Currently, two official plugins are available:
 
 - https://mui.com/material-ui/react-card/ (card)
 
+- https://www.material-tailwind.com/docs/react/card#profile-card (component)
+
 Background: #FAF9F6, Primary: 333333 or 01161e, Secondary: #F2B263 or 52b788
 
 
@@ -61,3 +63,33 @@ Comics, Computers & Tech, Arts & Music, Biographies, Health & Fitness, Cooking, 
 Kids, Sports, Computers & Tech, Comics, Biographies, Health & Fitness, Literature & Fiction, Science & Math, Travel
 
 
+Book image - 
+https://demo.fieldthemes.com/bookshop/demo1/home2/38-large_default/eos-lobortis.jpg
+https://demo.fieldthemes.com/bookshop/demo1/home2/39-large_default/eos-lobortis.jpg 
+https://demo.fieldthemes.com/bookshop/demo1/home2/40-large_default/eos-lobortis.jpg
+https://demo.fieldthemes.com/bookshop/demo1/home2/34-large_default/the-art-city.jpg
+https://demo.fieldthemes.com/bookshop/demo1/home2/33-large_default/the-art-city.jpg
+https://demo.fieldthemes.com/bookshop/demo1/home2/31-large_default/convallis-pharetra.jpg
+https://demo.fieldthemes.com/bookshop/demo1/home2/48-large_default/history-month.jpg
+https://demo.fieldthemes.com/bookshop/demo1/home2/28-large_default/etiam-auctor.jpg
+https://demo.fieldthemes.com/bookshop/demo1/home2/30-large_default/etiam-auctor.jpg
+https://demo.fieldthemes.com/bookshop/demo1/home2/25-large_default/grateful-and-give.jpg
+https://demo.fieldthemes.com/bookshop/demo1/home2/36-large_default/the-storyteller.jpg
+https://demo.fieldthemes.com/bookshop/demo1/home2/43-large_default/suspendisse-vel.jpg
+https://demo.fieldthemes.com/bookshop/demo1/home2/46-large_default/the-book-of-love.jpg
+
+https://demo.fieldthemes.com/bookshop/demo1/home2/37-large_default/the-storyteller.jpg
+https://demo.fieldthemes.com/bookshop/demo1/home2/44-large_default/the-book-of-love.jpg
+https://demo.fieldthemes.com/bookshop/demo1/home2/41-large_default/suspendisse-vel.jpg
+https://demo.fieldthemes.com/bookshop/demo1/home2/45-large_default/the-book-of-love.jpg
+
+https://demo.fieldthemes.com/bookshop/demo1/home2/50-large_default/convallis-pharetra.jpg
+https://demo.fieldthemes.com/bookshop/demo1/home2/24-large_default/grateful-and-give.jpg
+https://demo.fieldthemes.com/bookshop/demo1/home2/42-large_default/suspendisse-vel.jpg
+https://demo.fieldthemes.com/bookshop/demo1/home2/47-large_default/history-month.jpg
+
+Kids, Computers & Tech, Comic, Health & Fitness, Literature & Fiction, Science & Math, Sci-Fi & Fantasy
+
+const {id, name, quantity, author, image} = book;
+
+https://internshala.com/
