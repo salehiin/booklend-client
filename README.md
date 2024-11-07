@@ -13,9 +13,17 @@ Currently, two official plugins are available:
 # 58.4 - banner styling, linear gradient 
 # 58.5 - about section, position
 # 58.6 - services section, 05:30
+# 58.7 - login page structured, firebase set and enviroment variables secure
+# 58.8 - register page structured, proptypes error, provider, authProvider, AuthContext, createContext, getAuth, user, setUser, loading, setLoading, useState
+# 58.9 - register done
+# 58.10 - mongoDB comparison operators
+
+
+# 59.1 - backend setup, mongodb setup environment variables secure
+# 59.2 - 02:30
 
 # Home page - 4 categories - image, name, button, extra 2 sections
-# Navbar - Logo, Home, Add Book, All Books, Borrowed Books, Login
+# Navbar - Logo, Home, Add Book, All Books, Borrowed Books, 
 
 
 
@@ -37,6 +45,8 @@ Currently, two official plugins are available:
 70% opacity: #01161eb3
 80% opacity: #01161ecc
 90% opacity: #01161ee6
+
+Orange - FFA500
 
 # Home page | Featured Books - categories(parallex) - Blog | Newsletter - Blog/News&Events/Newsletter/Search
 
@@ -93,3 +103,5 @@ Kids, Computers & Tech, Comic, Health & Fitness, Literature & Fiction, Science &
 const {id, name, quantity, author, image} = book;
 
 https://internshala.com/
+flexjobs
+naukri

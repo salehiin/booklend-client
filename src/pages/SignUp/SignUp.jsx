@@ -1,24 +1,27 @@
-import { Link } from 'react-router-dom';
-import img from '../../assets/login.jpg'
-import { useContext } from 'react';
-import { AuthContext } from '../../AuthProvider';
+import { Link } from "react-router-dom";
+import img from '../../assets/register.jpg'
+import { useContext } from "react";
+import { AuthContext } from "../../AuthProvider";
 
-const Login = () => {
 
-    const {signIn} = useContext(AuthContext);
+const SignUp = () => {
 
-    const handleLogin = event =>{
+    const {createUser} = useContext(AuthContext);
+
+    const handleSignUp = event =>{
         event.preventDefault();
         const form = event.target;
+        const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password)
-        signIn(email, password)
-        .then(result =>{
+        console.log(name, email, password)
+
+        createUser(email, password)
+        .then(result => {
             const user = result.user;
-            console.log(user);
+            console.log(user)
         })
-        .catch(error => console.log(error));
+        .catch(error => console.log(error))
 
     }
 
@@ -27,13 +30,19 @@ const Login = () => {
             <img src={img} alt="" className="max-h-[90vh] object-cover rounded-lg" />
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="text-center lg:text-left w-1/2">
-                    
+
                     {/* <img src={img} alt="Login" className='w-full rounded-lg' /> */}
                 </div>
                 <div className="card bg-transparent text-orange-600 w-full max-w-sm shrink-0 shadow-2xl bg-gradient-to-r from-[#01161ecc] to-[#FAF9F61A]">
-                {/* <img src={img} alt="" className="w-full object-cover" /> FAF9F61A A3B4BD33*/}
-                    <form onSubmit={handleLogin} className="card-body">
-                    <h1 className="text-3xl font-bold">Login now!</h1>
+                    {/* <img src={img} alt="" className="w-full object-cover" /> FAF9F61A A3B4BD33*/}
+                    <form onSubmit={handleSignUp} className="card-body">
+                        <h1 className="text-3xl font-bold">Sign Up!</h1>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Name</span>
+                            </label>
+                            <input type="text" name='name' placeholder="name" className="input input-bordered" required />
+                        </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Email</span>
@@ -50,17 +59,14 @@ const Login = () => {
                             </label>
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn bg-orange-600 text-[#333333] hover:bg-transparent hover:text-orange-600">Login</button>
+                            <button className="btn bg-orange-600 text-[#333333] hover:bg-transparent hover:text-orange-600">Sign Up</button>
                         </div>
                     </form>
-                    <p className='text-white mb-4'>New to Bookland <Link className='text-info font-bold' to="/signup">Sign up</Link></p>
+                    <p className='text-white mb-4'>Already have an account? <Link className='text-info font-bold' to="/login">Login</Link></p>
                 </div>
             </div>
         </div>
     );
 };
 
-export default Login;
-
-
-
+export default SignUp;

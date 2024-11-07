@@ -49,7 +49,7 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <button className="btn btn-outline text-[#F2B263] hover:bg-[#F2B263]">Login</button>
+                    <Link className="btn btn-outline text-[#F2B263] hover:bg-[#F2B263]" to="/login">Login</Link>
                 </div>
             </div>
         </div>
