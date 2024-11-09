@@ -1,12 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import img from '../../assets/register.jpg'
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider";
+import SocialLogin from "../../components/SocialLogin/SocialLogin";
 
 
 const SignUp = () => {
 
     const {createUser} = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const handleSignUp = event =>{
         event.preventDefault();
@@ -14,12 +17,13 @@ const SignUp = () => {
         const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(name, email, password)
+        console.log(email, password)
 
         createUser(email, password)
         .then(result => {
             const user = result.user;
             console.log(user)
+            navigate(location?.state ? location?.state : '/')
         })
         .catch(error => console.log(error))
 
@@ -62,6 +66,8 @@ const SignUp = () => {
                             <button className="btn bg-orange-600 text-[#333333] hover:bg-transparent hover:text-orange-600">Sign Up</button>
                         </div>
                     </form>
+                    <SocialLogin></SocialLogin>
+                    <div className="divider bg-orange-600 h-[1px]"></div>
                     <p className='text-white mb-4'>Already have an account? <Link className='text-info font-bold' to="/login">Login</Link></p>
                 </div>
             </div>

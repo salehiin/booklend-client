@@ -2,12 +2,12 @@
 import { useEffect, useState } from 'react';
 import Book from './Book';
 
-const AllBooks = () => {
+const Books = () => {
 
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
-        fetch('books.json')
+        fetch('http://localhost:5000/books')
             .then(res => res.json())
             .then(data => setBooks(data));
     }, [])
@@ -22,7 +22,7 @@ const AllBooks = () => {
             <div className='grid md:grid-cols-2 gap-4 pb-6'>
                 {
                     books.map(book => <Book
-                    key={book.id}
+                    key={book._id}
                     book={book}
                     ></Book>)
                 }
@@ -31,4 +31,4 @@ const AllBooks = () => {
     );
 };
 
-export default AllBooks;
+export default Books;

@@ -1,14 +1,32 @@
 import { Link } from "react-router-dom";
 import logo from '../../../assets/blogo.png';
+import { useContext } from "react";
+import { AuthContext } from "../../../AuthProvider";
 
 
 const NavBar = () => {
 
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then()
+            .catch(error => console.log(error))
+    }
+
     const navItems = <>
         <li><Link className="hover:bg-[#F2B263] hover:text-[#333333]" to="/">Home</Link></li>
-        <li><Link className="hover:bg-[#F2B263] hover:text-[#333333]" to="/">Add Book</Link></li>
         <li><Link className="hover:bg-[#F2B263] hover:text-[#333333]" to="/books">All Books</Link></li>
-        <li><Link className="hover:bg-[#F2B263] hover:text-[#333333]" to="/">Borrowed Book</Link></li>
+        {
+            user?.email ? <>
+                <li><Link className="hover:bg-[#F2B263] hover:text-[#333333]" to="/">Add Book</Link></li>
+                <li><Link className="hover:bg-[#F2B263] hover:text-[#333333]" to="/borrowings">Borrowed Books</Link></li>
+            </>
+                :
+                (null)
+                    }
+
+
     </>
 
     return (
@@ -33,11 +51,11 @@ const NavBar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                                {navItems}
+                            {navItems}
 
                         </ul>
                     </div>
-                    <Link className="w-8 flex gap-1" to="/" clLinkssName="btn btn-ghost text-xl">
+                    <Link to="/" className="w-8 flex gap-1">
                         <img src={logo} className="" alt="" />
                         <p className="text-[#F2B263] text-xl font-semibold">Booklend</p>
                     </Link>
@@ -45,11 +63,17 @@ const NavBar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 text-[#F2B263]">
                         {navItems}
-                        
+
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link className="btn btn-outline text-[#F2B263] hover:bg-[#F2B263]" to="/login">Login</Link>
+                    {user?.email ? <>
+                        {/* <Link to="/borrowings" >My Bookings</Link> */}
+                        <Link onClick={handleLogOut} className="btn btn-outline text-[#F2B263] hover:bg-[#F2B263]">Log out</Link>
+                    </>
+                        : <Link className="btn btn-outline text-[#F2B263] hover:bg-[#F2B263]" to="/login">Login</Link>
+                    }
+
                 </div>
             </div>
         </div>

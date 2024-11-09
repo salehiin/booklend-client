@@ -6,6 +6,10 @@ import SingleCategoryDisplay from "../pages/singleCategory/singleCategoryDisplay
 import Books from "../pages/Books/Books/Books";
 import Login from "../pages/Login/Login";
 import SignUp from "../pages/SignUp/SignUp";
+import CheckOut from "../pages/CheckOut/CheckOut";
+import Borrowings from "../pages/Borrowings/Borrowings";
+import ProtectedRoute from "./ProtectedRoute";
+
 
 
 const router = createBrowserRouter([
@@ -28,6 +32,15 @@ const router = createBrowserRouter([
         {
           path: '/signup',
           element: <SignUp></SignUp>
+        },
+        {
+          path: 'checkout/:id',
+          element: <ProtectedRoute><CheckOut></CheckOut></ProtectedRoute>,
+          loader: ({params}) => fetch(`http://localhost:5000/books/${params.id}`)
+        },
+        {
+          path: 'borrowings',
+          element: <ProtectedRoute><Borrowings></Borrowings></ProtectedRoute>
         },
         {
             path: '/kids',

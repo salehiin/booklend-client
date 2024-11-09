@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "name": "The Art City",
     "quantity": 10,
     "author": "John Smith",
@@ -11,7 +10,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/34-large_default/the-art-city.jpg"
   },
   {
-    "id": 2,
     "name": "EOS Lobortis",
     "quantity": 5,
     "author": "Alice Walker",
@@ -22,7 +20,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/38-large_default/eos-lobortis.jpg"
   },
   {
-    "id": 3,
     "name": "The Storyteller",
     "quantity": 7,
     "author": "Margaret Atwood",
@@ -33,7 +30,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/36-large_default/the-storyteller.jpg"
   },
   {
-    "id": 4,
     "name": "Convallis Pharetra",
     "quantity": 8,
     "author": "Robert Lang",
@@ -44,7 +40,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/50-large_default/convallis-pharetra.jpg"
   },
   {
-    "id": 5,
     "name": "History Month",
     "quantity": 6,
     "author": "Sarah Lee",
@@ -55,7 +50,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/47-large_default/history-month.jpg"
   },
   {
-    "id": 6,
     "name": "The Book of Love",
     "quantity": 4,
     "author": "Emily Brontë",
@@ -66,7 +60,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/44-large_default/the-book-of-love.jpg"
   },
   {
-    "id": 7,
     "name": "Suspendisse Vel",
     "quantity": 11,
     "author": "Thomas Kline",
@@ -77,7 +70,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/41-large_default/suspendisse-vel.jpg"
   },
   {
-    "id": 8,
     "name": "Grateful and Give",
     "quantity": 12,
     "author": "Helen Stone",
@@ -88,7 +80,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/25-large_default/grateful-and-give.jpg"
   },
   {
-    "id": 9,
     "name": "The Art City II",
     "quantity": 9,
     "author": "James Cameron",
@@ -99,7 +90,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/33-large_default/the-art-city.jpg"
   },
   {
-    "id": 10,
     "name": "EOS Lobortis Vol 2",
     "quantity": 5,
     "author": "Peter Milton",
@@ -110,7 +100,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/39-large_default/eos-lobortis.jpg"
   },
   {
-    "id": 11,
     "name": "Science of Math",
     "quantity": 6,
     "author": "Anna Einstein",
@@ -121,7 +110,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/28-large_default/etiam-auctor.jpg"
   },
   {
-    "id": 12,
     "name": "Healthy Living",
     "quantity": 7,
     "author": "Sarah Mills",
@@ -132,7 +120,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/48-large_default/history-month.jpg"
   },
   {
-    "id": 13,
     "name": "Comic World",
     "quantity": 15,
     "author": "Marvel Studios",
@@ -143,7 +130,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/24-large_default/grateful-and-give.jpg"
   },
   {
-    "id": 14,
     "name": "Kids Encyclopedia",
     "quantity": 13,
     "author": "John Doe",
@@ -154,7 +140,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/37-large_default/the-storyteller.jpg"
   },
   {
-    "id": 15,
     "name": "The Story of Science",
     "quantity": 9,
     "author": "Michael Frey",
@@ -165,7 +150,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/40-large_default/eos-lobortis.jpg"
   },
   {
-    "id": 16,
     "name": "Digital Mind",
     "quantity": 6,
     "author": "Lucy Hardwell",
@@ -176,7 +160,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/39-large_default/eos-lobortis.jpg"
   },
   {
-    "id": 17,
     "name": "Future Medicine",
     "quantity": 5,
     "author": "Greg Collins",
@@ -187,7 +170,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/25-large_default/grateful-and-give.jpg"
   },
   {
-    "id": 18,
     "name": "Rocket Science for Kids",
     "quantity": 14,
     "author": "Katy Blane",
@@ -198,7 +180,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/36-large_default/the-storyteller.jpg"
   },
   {
-    "id": 19,
     "name": "Math Magic",
     "quantity": 7,
     "author": "Albert Young",
@@ -209,7 +190,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/28-large_default/etiam-auctor.jpg"
   },
   {
-    "id": 20,
     "name": "Heart of the Wild",
     "quantity": 10,
     "author": "Jane Wild",
@@ -220,7 +200,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/40-large_default/eos-lobortis.jpg"
   },
   {
-    "id": 21,
     "name": "Computers and Us",
     "quantity": 9,
     "author": "Tom Byte",
@@ -231,7 +210,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/41-large_default/suspendisse-vel.jpg"
   },
   {
-    "id": 22,
     "name": "Understanding Cells",
     "quantity": 4,
     "author": "Dr. Sylvia Black",
@@ -242,7 +220,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/28-large_default/etiam-auctor.jpg"
   },
   {
-    "id": 23,
     "name": "Running Wild",
     "quantity": 8,
     "author": "Jack F. Road",
@@ -253,7 +230,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/50-large_default/convallis-pharetra.jpg"
   },
   {
-    "id": 24,
     "name": "Coding Basics",
     "quantity": 11,
     "author": "James Fry",
@@ -264,7 +240,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/41-large_default/suspendisse-vel.jpg"
   },
   {
-    "id": 25,
     "name": "Planet Earth",
     "quantity": 10,
     "author": "Richard Green",
@@ -275,7 +250,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/47-large_default/history-month.jpg"
   },
   {
-    "id": 26,
     "name": "Meditation Guide",
     "quantity": 7,
     "author": "Laura Peace",
@@ -286,7 +260,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/25-large_default/grateful-and-give.jpg"
   },
   {
-    "id": 27,
     "name": "Learning HTML",
     "quantity": 6,
     "author": "Jennifer Webb",
@@ -297,7 +270,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/41-large_default/suspendisse-vel.jpg"
   },
   {
-    "id": 28,
     "name": "Legends of the Galaxy",
     "quantity": 10,
     "author": "Lana Ray",
@@ -308,7 +280,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/38-large_default/eos-lobortis.jpg"
   },
   {
-    "id": 29,
     "name": "Ultimate Guide to Math",
     "quantity": 9,
     "author": "Isaac Stone",
@@ -319,7 +290,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/28-large_default/etiam-auctor.jpg"
   },
   {
-    "id": 30,
     "name": "The Wild Jungle",
     "quantity": 8,
     "author": "Sam Lion",
@@ -330,7 +300,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/36-large_default/the-storyteller.jpg"
   },
   {
-    "id": 31,
     "name": "Healthy Eating",
     "quantity": 6,
     "author": "Diet Chef",
@@ -341,7 +310,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/25-large_default/grateful-and-give.jpg"
   },
   {
-    "id": 32,
     "name": "The Cosmos",
     "quantity": 4,
     "author": "Neil Sky",
@@ -352,7 +320,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/28-large_default/etiam-auctor.jpg"
   },
   {
-    "id": 33,
     "name": "Basic Robotics",
     "quantity": 8,
     "author": "Nina Bot",
@@ -363,7 +330,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/41-large_default/suspendisse-vel.jpg"
   },
   {
-    "id": 34,
     "name": "The Green Planet",
     "quantity": 5,
     "author": "Eco Org",
@@ -374,7 +340,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/47-large_default/history-month.jpg"
   },
   {
-    "id": 35,
     "name": "Digital Universe",
     "quantity": 11,
     "author": "Carl Binary",
@@ -385,7 +350,6 @@
     "image": "https://demo.fieldthemes.com/bookshop/demo1/home2/41-large_default/suspendisse-vel.jpg"
   },
   {
-    "id": 36,
     "name": "Yoga for Life",
     "quantity": 7,
     "author": "Maya Flex",

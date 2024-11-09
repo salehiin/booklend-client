@@ -20,7 +20,36 @@ Currently, two official plugins are available:
 
 
 # 59.1 - backend setup, mongodb setup environment variables secure
-# 59.2 - 02:30
+# 59.2 - database ready, data transfer from local to mongodb database, api ready, data load on server, click on individual product then show details of that product - have to see again to write content
+# 59.3 - checkout page-route-api-form ready against particular id, loader, useLoaderData, params
+# 59.4 - error fix, form ready, data collect using form, backend database create
+# 59.5 - 
+# 59.6 - email wise data filtering from backend, my bookings
+# 59.7 - display my booked product in tebuler format
+# 59.8 - delete a data, update
+# 59.9 - update a data, pending status confirm
+
+# 60.1 - when clone any project from githib what should fix, then it will work, auto redirect to desired location, if logged in or redirect to log in page
+# 60.2 - navigate, networkTab, data secure from server side, jwt intro
+# 60.3 - jwt install create, axios
+# - have to read - https://github.com/auth0/node-jsonwebtoken
+# 60.4 - jwt generate then secure, cookie parser, cookie
+    require('crypto').randomBytes(64)
+    require('crypto').randomBytes(64).toString('hex')
+
+# 60.5 - jwt axios implementation, overview
+# 60.6 - recap
+# 60.7 - 
+# 60.8 - 
+
+
+# 60_5.1 - important when make a new project out of PH curriculam
+# 60_5.2 - 
+
+# 61.8, 9, 10, 11 - deploy - vercel, firebase
+# 62.1 - pagination
+# 65.1, 65.3, 65.4, 65.5, 65.6, 64.6- popular menu, 64.7- featured, 64.8- rating, 66.6- regex, 66.7- sweet alert, 66.9- user profile, 67.6- dashboard, 68.2- google sign in, 68.3, 68.4, 68.5- admin, 68.6, 68.9, 68.10, 69.2- add item, 69.4- image update, 69.6- admin manage items, 71.1- admin dashboard, 71.3, 71.6- category, 71.8- deploy
+
 
 # Home page - 4 categories - image, name, button, extra 2 sections
 # Navbar - Logo, Home, Add Book, All Books, Borrowed Books, 
@@ -105,3 +134,37 @@ const {id, name, quantity, author, image} = book;
 https://internshala.com/
 flexjobs
 naukri
+
+
+# Library sites
+- https://www.overdrive.com/
+    - https://www.overdrive.com/apps/libby?
+- https://www.gutenberg.org/
+- https://openlibrary.org/
+- https://www.hoopladigital.com/
+
+
+# Book Borrow form
+Basic Information
+User Name - Name of the person borrowing the book.
+Library Card Number or Member ID - Unique ID to verify membership.
+Email Address - For notifications and contact information.
+Phone Number - Optional, for additional contact.
+
+Book Details
+Book Title - The name of the book being borrowed.
+Author - The book’s author to avoid confusion with similarly titled books.
+ISBN (if applicable) - Unique identifier for precise tracking (optional).
+
+Borrowing Details
+Borrow Date - The date the user is borrowing the book.
+Return Date - Expected return date or due date.
+Pickup Location - If there are multiple branches or pickup options.
+Format - Physical copy, e-book, or audiobook (if applicable).
+
+Additional Options
+Notification Preferences - Email or SMS notifications for reminders.
+Notes - Any additional notes or requests from the borrower.
+
+Submit Button
+Submit or Confirm Borrowing - Button to submit the form.
