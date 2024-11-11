@@ -9,6 +9,8 @@ import SignUp from "../pages/SignUp/SignUp";
 import CheckOut from "../pages/CheckOut/CheckOut";
 import Borrowings from "../pages/Borrowings/Borrowings";
 import ProtectedRoute from "./ProtectedRoute";
+import Dashboard from "../Layout/Dashboard";
+import Shelf from "../pages/Dashboard/Shelf/Shelf";
 
 
 
@@ -36,7 +38,7 @@ const router = createBrowserRouter([
         {
           path: 'checkout/:id',
           element: <ProtectedRoute><CheckOut></CheckOut></ProtectedRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/books/${params.id}`)
+          loader: ({params}) => fetch(`https://booklend-server.vercel.app/books/${params.id}`)
         },
         {
           path: 'borrowings',
@@ -48,6 +50,16 @@ const router = createBrowserRouter([
         }
       ]
     },
+    {
+      path:'dashboard',
+      element: <Dashboard></Dashboard>,
+      children: [
+        {
+          path: 'shelf',
+          element: <Shelf></Shelf>
+        }
+      ]
+    }
   ]);
 
   export default router;

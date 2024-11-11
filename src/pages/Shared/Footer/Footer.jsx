@@ -5,7 +5,7 @@ const Footer = () => {
         <div>
             <footer className="footer footer-center bg-base-300 text-base-content p-4">
                 <aside>
-                    <p className="text-[#F2B263] ">Copyright © {new Date().getFullYear()} - All right reserved by Booklend</p>
+                    <p className="text-orange-600 ">Copyright © {new Date().getFullYear()} - All right reserved by Booklend</p>
                 </aside>
             </footer>
         </div>

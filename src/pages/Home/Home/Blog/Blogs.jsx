@@ -7,7 +7,7 @@ const Blog = () => {
             <div id="ide1" className="carousel-item relative w-full">
                 <div className="absolute bg-[#f2f2f2] w-full ">
 
-                    <div className="flex justify-between p-3 text-[#F2B263]">
+                    <div className="flex justify-between p-3 text-orange-600">
                         <p className="uppercase font-bold">Our Blog</p>
                         <div>
                             <a href="#ide4" className="m-2">❮</a>
@@ -15,8 +15,8 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="my-16">
-                    <div className="flex">
+                <div className="my-8 md:my-10 lg:my-16">
+                    <div className="grid grid-cols-2 lg:grid-cols-4">
                         
                         <FeaturedProduct
                             photo={"https://demo.fieldthemes.com/bookshop/demo1/home2/50-large_default/convallis-pharetra.jpg"}
@@ -36,7 +36,7 @@ const Blog = () => {
                         ></FeaturedProduct>
 
                     </div>
-                    <div className="flex">
+                    <div className="grid grid-cols-2 lg:grid-cols-4">
                         <FeaturedProduct
                             photo={"https://demo.fieldthemes.com/bookshop/demo1/home2/41-large_default/suspendisse-vel.jpg"}
                             bookName={"Convallis Pharetra"}
@@ -61,16 +61,16 @@ const Blog = () => {
             <div id="ide2" className="carousel-item relative w-full">
                 <div className="absolute bg-[#f2f2f2] w-full ">
 
-                    <div className="flex justify-between p-3 text-[#F2B263]">
-                        <p className="uppercase font-bold">Featured Books</p>
+                    <div className="flex justify-between p-3 text-orange-600">
+                        <p className="uppercase font-bold">Our Blog</p>
                         <div>
                             <a href="#ide1" className="m-2">❮</a>
                             <a href="#ide3" className="m-2">❯</a>
                         </div>
                     </div>
                 </div>
-                <div className="my-16">
-                    <div className="flex">
+                <div className="my-8 md:my-10 lg:my-16">
+                    <div className="grid grid-cols-2 lg:grid-cols-4">
                         <FeaturedProduct
                             photo={"https://demo.fieldthemes.com/bookshop/demo1/home2/41-large_default/suspendisse-vel.jpg"}
                             bookName={"Convallis Pharetra"}
@@ -88,7 +88,7 @@ const Blog = () => {
                             bookName={"Convallis Pharetra"}
                         ></FeaturedProduct>
                     </div>
-                    <div className="flex">
+                    <div className="grid grid-cols-2 lg:grid-cols-4">
                         <FeaturedProduct
                             photo={"https://demo.fieldthemes.com/bookshop/demo1/home2/50-large_default/convallis-pharetra.jpg"}
                             bookName={"Convallis Pharetra"}
@@ -112,16 +112,16 @@ const Blog = () => {
             <div id="ide3" className="carousel-item relative w-full">
                 <div className="absolute bg-[#f2f2f2] w-full ">
 
-                    <div className="flex justify-between p-3 text-[#F2B263]">
-                        <p className="uppercase font-bold">Featured Books</p>
+                    <div className="flex justify-between p-3 text-orange-600">
+                        <p className="uppercase font-bold">Our Blog</p>
                         <div>
                             <a href="#ide2" className="m-2">❮</a>
                             <a href="#ide4" className="m-2">❯</a>
                         </div>
                     </div>
                 </div>
-                <div className='my-16'>
-                    <div className="flex">
+                <div className='my-8 md:my-10 lg:my-16'>
+                    <div className="grid grid-cols-2 lg:grid-cols-4">
                         
                         <FeaturedProduct
                             photo={"https://demo.fieldthemes.com/bookshop/demo1/home2/50-large_default/convallis-pharetra.jpg"}
@@ -141,7 +141,7 @@ const Blog = () => {
                         ></FeaturedProduct>
 
                     </div>
-                    <div className="flex">
+                    <div className="grid grid-cols-2 lg:grid-cols-4">
                         <FeaturedProduct
                             photo={"https://demo.fieldthemes.com/bookshop/demo1/home2/41-large_default/suspendisse-vel.jpg"}
                             bookName={"Convallis Pharetra"}
@@ -166,16 +166,16 @@ const Blog = () => {
             <div id="ide4" className="carousel-item relative w-full">
                 <div className="absolute bg-[#f2f2f2] w-full ">
 
-                    <div className="flex justify-between p-3 text-[#F2B263]">
-                        <p className="uppercase font-bold">Featured Books</p>
+                    <div className="flex justify-between p-3 text-orange-600">
+                        <p className="uppercase font-bold">Our Blog</p>
                         <div>
                             <a href="#ide3" className="m-2">❮</a>
                             <a href="#ide1" className="m-2">❯</a>
                         </div>
                     </div>
                 </div>
-                <div className='my-16'>
-                    <div className="flex">
+                <div className='my-8 md:my-10 lg:my-16'>
+                    <div className="grid grid-cols-2 lg:grid-cols-4">
                         <FeaturedProduct
                             photo={"https://demo.fieldthemes.com/bookshop/demo1/home2/41-large_default/suspendisse-vel.jpg"}
                             bookName={"Convallis Pharetra"}
@@ -193,7 +193,7 @@ const Blog = () => {
                             bookName={"Convallis Pharetra"}
                         ></FeaturedProduct>
                     </div>
-                    <div className="flex">
+                    <div className="grid grid-cols-2 lg:grid-cols-4">
                         <FeaturedProduct
                             photo={"https://demo.fieldthemes.com/bookshop/demo1/home2/50-large_default/convallis-pharetra.jpg"}
                             bookName={"Convallis Pharetra"}

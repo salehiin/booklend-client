@@ -29,7 +29,7 @@ const CheckOut = () => {
 
         console.log(borrowing);
 
-        fetch('http://localhost:5000/borrowings', {
+        fetch('https://booklend-server.vercel.app/borrowings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -38,7 +38,7 @@ const CheckOut = () => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data);
+            // console.log(data);
             if(data.insertedId){
                 alert('Borrowing Successful')
             }

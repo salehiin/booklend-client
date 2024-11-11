@@ -9,7 +9,7 @@ const FeaturedProduct = ({photo, bookName}) => {
                 // src="https://demo.fieldthemes.com/bookshop/demo1/home2/50-large_default/convallis-pharetra.jpg"
                 src={photo}
                 className="w-full" />
-            <div className="flex justify-around items-center text-xs p-7 border-t">
+            <div className="flex flex-col lg:flex-row justify-center lg:justify-around items-center gap-2 text-xs text-[#333333] p-2 lg:p-7 border-t">
                 {/* <p>Convallis Pharetra</p> */}
                 <p>{bookName}</p>
                 <span>

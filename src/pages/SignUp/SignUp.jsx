@@ -3,10 +3,11 @@ import img from '../../assets/register.jpg'
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider";
 import SocialLogin from "../../components/SocialLogin/SocialLogin";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 
 const SignUp = () => {
-
+    const axiosPublic = useAxiosPublic();
     const {createUser} = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
@@ -17,12 +18,26 @@ const SignUp = () => {
         const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password)
+        // console.log(email, password)
 
         createUser(email, password)
         .then(result => {
+            // create user entryin the database
+            const userInfo = {
+                name: name,
+                email: email
+            }
+            axiosPublic.post('/users', userInfo)
+            .then(res =>{
+                if(res.data.insertedId){
+                    // Swal.fire({});
+                    alert('User created successfully')
+                    navigate('/')
+                }
+            })
             const user = result.user;
-            console.log(user)
+            // console.log(user)
+            // Swal.fire({});
             navigate(location?.state ? location?.state : '/')
         })
         .catch(error => console.log(error))

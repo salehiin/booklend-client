@@ -9,7 +9,7 @@ const Borrowings = () => {
     const { user } = useContext(AuthContext);
     const [borrowings, setBorrowings] = useState([]);
 
-    const url = `http://localhost:5000/borrowings?email=${user?.email}`;
+    const url = `https://booklend-server.vercel.app/borrowings?email=${user?.email}`;
     useEffect(() => {
 
         axios.get(url, {withCredentials: true})
@@ -25,12 +25,12 @@ const Borrowings = () => {
     const handleDelete = id => {
         const proceed = confirm('Are you sure to delete?');
         if (proceed) {
-            fetch(`http://localhost:5000/borrowings/${id}`, {
+            fetch(`https://booklend-server.vercel.app/borrowings/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
+                    // console.log(data);
                     if(data.deletedCount > 0){
                         alert('Delete successful');
                         const remaining = borrowings.filter(borrowing => borrowing._id !== id);
@@ -41,7 +41,7 @@ const Borrowings = () => {
     }
 
     const handleBorrowingConfirm = id => {
-        fetch(`http://localhost:5000/borrowings/${id}`, {
+        fetch(`https://booklend-server.vercel.app/borrowings/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

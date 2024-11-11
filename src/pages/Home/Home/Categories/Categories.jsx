@@ -16,13 +16,13 @@ const Categories = ({ img }) => {
                     backgroundImage: `url("${img}")`,
                 }}>
                 <div className="hero-overlay bg-opacity-60"></div>
-                <div className="hero-content text-neutral-content w-3/4 text-center">
+                <div className="hero-content text-neutral-content lg:w-3/4 text-center">
                     <div className="">
-                        <div className='text-[#F2B263] p-12'>
+                        <div className='text-orange-600 p-5 md:p-10 lg:p-12'>
                             <h1 className='text-3xl font-bold p-4'>Explore Our Categories</h1>
-                            <p className='text-lg text-white'>Whether you're looking for the latest bestsellers, classic literature, or specific genres like children's books, science fiction, or self-help, we have something for everyone. Dive into each category to find curated collections that make it easy to explore and uncover new favorites.</p>
+                            <p className='text-md md:text-lg text-white'>Whether you're looking for the latest bestsellers, classic literature, or specific genres like children's books, science fiction, or self-help, we have something for everyone. Dive into each category to find curated collections that make it easy to explore and uncover new favorites.</p>
                         </div>
-                        <div className="grid grid-cols-4 gap-2">
+                        <div className="grid grid-cols-3 lg:grid-cols-4 gap-2">
                             <Category
                                 route={"kids"}
                                 imageUrl={"https://demo.fieldthemes.com/bookshop/demo1/home2/24-large_default/grateful-and-give.jpg"}
@@ -56,6 +56,12 @@ const Categories = ({ img }) => {
                                 imageUrl={"https://demo.fieldthemes.com/bookshop/demo1/home2/47-large_default/history-month.jpg"}
                                 categoryName={"Science & Math"}
                             ></Category>
+                            <div className="lg:hidden">
+                                <Category 
+                                    imageUrl={"https://demo.fieldthemes.com/bookshop/demo1/home2/34-large_default/the-art-city.jpg"}
+                                    categoryName={"Science & Math"}
+                                ></Category>
+                            </div>
                         </div>
                     </div>
                 </div>

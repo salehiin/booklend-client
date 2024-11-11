@@ -12,7 +12,7 @@ const Featured = () => {
             <div id="lide1" className="carousel-item relative w-full">
                 <div className="absolute bg-[#f2f2f2] w-full ">
 
-                    <div className="flex justify-between p-3 text-[#F2B263]">
+                    <div className="flex justify-between p-3 text-orange-600">
                         <p className="uppercase font-bold">Featured Books</p>
                         <div>
                             <a href="#lide4" className="m-2">❮</a>
